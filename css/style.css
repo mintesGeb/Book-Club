@@ -1,0 +1,60 @@
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3rem;
+}
+body {
+  text-align: center;
+}
+
+th,
+td {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid grey;
+  /* border-collapse: collapse; */
+  padding: 15px;
+  text-align: right;
+}
+
+#quote-writer {
+  font-family: monospace;
+  color: black;
+  padding: 20px 30px;
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  text-align: right;
+}
+.quote-div {
+  background-color: grey;
+  margin: 0;
+  height: 200px;
+  width: 100%;
+}
+
+.table-div {
+  background-color: yellow;
+  text-align: center;
+  height: 200px;
+}
+
+.quote {
+  font-family: cursive;
+  font-size: 2rem;
+  color: white;
+
+  /* height: 150px; */
+  width: 80%;
+  margin: 0;
+  padding: 50px auto 0;
+  position: absolute;
+  top: 20%;
+  text-align: center;
+}
+
+.books-read {
+  position: absolute;
+  left: 20px;
+  padding: 20px;
+  margin: 10px auto 20px;
+  width: 90%;
+}
