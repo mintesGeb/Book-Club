@@ -23,7 +23,56 @@
     />
   </head>
   <body>
-    <h1>Books</h1>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="brand navbar-brand" href="">Books</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarToggler"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="nav-list navbar-nav ml-auto merge-left">
+          <li class="nav-item">
+            <a class="nav-link" href="">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">getBooks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">giveBooks</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Education
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Rent / Buy Used</a></li>
+              <li><a class="dropdown-item" href="#">Give Away / Sell</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+                Support
+              </li>
+              <li><a class="dropdown-item" href="#">Donate</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <div class="quote-div">
       <p class="quote">
         <em>"Reading is to the mind what exercise is to the body."</em>

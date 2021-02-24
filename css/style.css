@@ -31,7 +31,7 @@ td {
 .quote-div {
   background-color: grey;
   margin: 0;
-  height: 240px;
+  height: 300px;
   width: 100%;
 }
 
@@ -72,4 +72,21 @@ td {
   left: 90%; */
   margin-top: 50px;
   margin-left: 75%;
+}
+
+.merge-left {
+  text-align: right;
+  position: absolute;
+  left: 70%;
+}
+
+.nav-list {
+  font-size: 1.2rem;
+}
+
+.brand {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  padding: 0 30px;
 }
