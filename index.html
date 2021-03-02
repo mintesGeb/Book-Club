@@ -1,117 +1,108 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Book-club</title>
-    <!-- style -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
 
-    <link rel="stylesheet" href="css/style.css" />
+<head>
+  <meta charset="utf-8" />
+  <title>Book-club</title>
+  <!-- style -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
 
-    <!-- font -->
+  <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <!-- font -->
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,900;1,300&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-      <a class="brand navbar-brand" href="">Books</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarToggler"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
 
-      <div class="collapse navbar-collapse" id="navbarToggler">
-        <ul class="nav-list navbar-nav ml-auto merge-left">
-          <li class="nav-item">
-            <a class="nav-link" href="">Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">getBooks</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">giveBooks</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Education
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Rent / Buy Used</a></li>
-              <li><a class="dropdown-item" href="#">Give Away / Sell</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-                Support
-              </li>
-              <li><a class="dropdown-item" href="#">Donate</a></li>
-            </ul>
-          </li>
-        </ul>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,900;1,300&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="brand navbar-brand" href="">Books</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="nav-list navbar-nav ml-auto merge-left">
+        <li class="nav-item">
+          <a class="nav-link" href="">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">getBooks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">giveBooks</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Education
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Rent / Buy Used</a></li>
+            <li><a class="dropdown-item" href="#">Give Away / Sell</a></li>
+            <li>
+              <hr class="dropdown-divider" />
+              Support
+            </li>
+            <li><a class="dropdown-item" href="#">Donate</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="quote-div">
+    <p class="quote">
+      <em>"Reading is to the mind what exercise is to the body."</em>
+    </p>
+    <h2 id="quote-writer" class="quote">Joseph Addison</h2>
+    <img id="quote-writer-img" src="https://cdn.britannica.com/75/147575-050-4E96698D/Joseph-Addison-engraving.jpg" alt="Joseph Addison portrait" />
+  </div>
+
+  <div class="table-div">
+    <button class="button-add btn btn-lg btn-primary">Add a Book</button>
+    <div class="container new-book-insert">
+      <div class="row">
+
+        <input class="col-lg-2 addBook" type="text" name="book read" value="" placeholder="book read">
+        <input class="col-lg-2 addBook" type="text" name="author" value="" placeholder="author">
+        <input class="col-lg-2 addBook" type="text" name="genre" value="" placeholder="genre">
+        <input class="col-lg-2 addBook" type="text" name="description" value="" placeholder="description">
+
       </div>
-    </nav>
-
-    <div class="quote-div">
-      <p class="quote">
-        <em>"Reading is to the mind what exercise is to the body."</em>
-      </p>
-      <h2 id="quote-writer" class="quote">Joseph Addison</h2>
-      <img
-        id="quote-writer-img"
-        src="https://cdn.britannica.com/75/147575-050-4E96698D/Joseph-Addison-engraving.jpg"
-        alt="Joseph Addison portrait"
-      />
     </div>
 
-    <div class="table-div">
-      <button class="button-add btn btn-lg btn-primary">Add a Book</button>
+    <table class="books-read">
 
-      <table class="books-read">
-        <tr>
-          <th>number</th>
-          <th>name</th>
-          <th>author</th>
-          <th>genre</th>
-          <th>description</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Don't waste your life.</td>
-          <td>John Piper</td>
-          <td>Self-Development</td>
-          <td>Conviction as to how life must be lived.</td>
-        </tr>
-      </table>
-    </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
 
-    <script src="script.js" charset="utf-8"></script>
-  </body>
+        <thead>
+          <tr>
+            <th>number</th>
+            <th>name</th>
+            <th>author</th>
+            <th>genre</th>
+            <th>description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Don't waste your life.</td>
+            <td>John Piper</td>
+            <td>Self-Development</td>
+            <td>Conviction as to how life must be lived.</td>
+          </tr>
+        </tbody>
+
+    
+    </table>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
 </html>
